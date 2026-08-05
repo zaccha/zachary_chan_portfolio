@@ -3,19 +3,20 @@
    Design tokens
 =========================================================== */
 :root {
-  --paper:      #F5F4F0;
-  --card:       #FCFBF9;
-  --ink:        #17212B;
-  --ink-soft:   #57626C;
-  --line:       #D9DCD4;
+  --paper:      #EEF0EE;
+  --card:       #FFFFFF;
+  --ink:        #1B211E;
+  --ink-soft:   #5A625D;
+  --line:       #D6DAD7;
   --pine:       #4D8049;
   --pine-text:  #457341;
   --pine-soft:  #E4ECE4;
   --amber:      #C97A2B;
 
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body:    'IBM Plex Sans', sans-serif;
+  --font-display: 'Archivo', sans-serif;
+  --font-body:    'Public Sans', sans-serif;
   --font-mono:    'IBM Plex Mono', monospace;
+  --font-label:   'Public Sans', sans-serif;
 
   --wrap: 880px;
   --radius: 3px;
@@ -117,8 +118,9 @@ a { color: var(--pine-text); }
 
 .site-nav { display: flex; gap: 28px; }
 .site-nav a {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-family: var(--font-label);
+  font-weight: 500;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-decoration: none;
@@ -134,8 +136,9 @@ a { color: var(--pine-text); }
    Type helpers
 =========================================================== */
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--pine-text);
@@ -145,7 +148,7 @@ a { color: var(--pine-text); }
 h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 
 .section-note {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin: -6px 0 32px;
@@ -174,7 +177,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 }
 
 .hero-meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.85rem;
   color: var(--ink-soft);
   margin: 0 0 48px;
@@ -183,7 +186,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 .flow-wrap { margin-top: 8px; }
 
 .flow-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.78rem;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -328,7 +331,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 }
 .case-row:first-child { border-top: none; padding-top: 0; }
 .case-row dt {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-weight: 600;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -365,8 +369,9 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 .card:hover h3 { color: var(--pine-text); }
 
 .card-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.73rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--amber);
@@ -392,7 +397,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 }
 
 .tags li {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.72rem;
   color: var(--ink-soft);
   background: var(--pine-soft);
@@ -431,7 +436,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 =========================================================== */
 .btn {
   display: inline-block;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.88rem;
   text-decoration: none;
   color: #fff;
@@ -450,7 +455,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.95rem;
 }
 .contact-list a {
@@ -471,7 +476,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   padding: 28px 0 48px;
 }
 .site-footer p {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
   font-size: 0.78rem;
   color: var(--ink-soft);
   margin: 0;

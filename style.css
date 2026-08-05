@@ -8,8 +8,8 @@
   --ink:        #17212B;
   --ink-soft:   #57626C;
   --line:       #D9DCD4;
-  --pine:       #1F6F52;
-  --pine-soft:  #E4EFE9;
+  --pine:       #4D8049;
+  --pine-soft:  #E4ECE4;
   --amber:      #C97A2B;
 
   --font-display: 'Space Grotesk', sans-serif;
@@ -224,8 +224,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(31, 111, 82, 0.35); }
-  50% { box-shadow: 0 0 0 6px rgba(31, 111, 82, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(77, 128, 73, 0.35); }
+  50% { box-shadow: 0 0 0 6px rgba(77, 128, 73, 0); }
 }
 
 .flow-arrow {

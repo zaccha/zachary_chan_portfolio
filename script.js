@@ -20,3 +20,20 @@ if ('IntersectionObserver' in window && sections.length) {
 
   sections.forEach(section => observer.observe(section));
 }
+
+// Sections/cards gently rise into view the first time they're scrolled to.
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window && revealEls.length) {
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      obs.unobserve(entry.target);
+    });
+  }, { threshold: 0.15 });
+
+  revealEls.forEach(el => revealObserver.observe(el));
+} else {
+  // No IntersectionObserver support — just show everything.
+  revealEls.forEach(el => el.classList.add('is-visible'));
+}

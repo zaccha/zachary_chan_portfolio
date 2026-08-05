@@ -38,6 +38,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  cursor: default;
 }
 
 .wrap {
@@ -203,6 +204,15 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   border-radius: var(--radius);
   padding: 7px 12px;
   white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.flow-node:hover {
+  background: var(--pine);
+  border-color: var(--pine);
+  color: #fff;
+  transform: translateY(-3px) scale(1.04);
 }
 
 .flow-node.is-active {
@@ -344,6 +354,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   border-color: var(--pine);
   box-shadow: 0 10px 24px -16px rgba(23, 33, 43, 0.35);
 }
+.card:hover h3 { color: var(--pine); }
 
 .card-eyebrow {
   font-family: var(--font-mono);
@@ -357,6 +368,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 12px;
+  transition: color 0.2s ease;
 }
 
 .card p { margin: 0 0 16px; color: var(--ink); }
@@ -378,6 +390,16 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   background: var(--pine-soft);
   border-radius: var(--radius);
   padding: 4px 9px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.tags li:hover,
+.skill-group .tags li:hover {
+  background: var(--pine);
+  border-color: var(--pine);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* ===========================================================
@@ -409,9 +431,9 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   border: 1px solid var(--ink);
   border-radius: var(--radius);
   padding: 12px 22px;
-  transition: background 0.15s ease, color 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
-.btn:hover { background: var(--pine); border-color: var(--pine); }
+.btn:hover { background: var(--pine); border-color: var(--pine); transform: translateY(-2px); }
 
 .contact-list {
   list-style: none;
@@ -423,8 +445,16 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   font-family: var(--font-mono);
   font-size: 0.95rem;
 }
-.contact-list a { text-decoration: none; }
-.contact-list a:hover { text-decoration: underline; }
+.contact-list a {
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+.contact-list a:hover {
+  text-decoration: underline;
+  color: var(--amber);
+  transform: translateX(4px);
+}
 
 /* ===========================================================
    Footer

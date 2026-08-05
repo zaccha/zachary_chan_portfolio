@@ -9,6 +9,7 @@
   --ink-soft:   #57626C;
   --line:       #D9DCD4;
   --pine:       #4D8049;
+  --pine-text:  #457341;
   --pine-soft:  #E4ECE4;
   --amber:      #C97A2B;
 
@@ -50,7 +51,7 @@ body {
   padding: 0 24px;
 }
 
-a { color: var(--pine); }
+a { color: var(--pine-text); }
 
 .skip-link {
   position: absolute;
@@ -112,7 +113,7 @@ a { color: var(--pine); }
   padding: 3px 8px;
   transition: border-color var(--fast) var(--ease), color var(--fast) var(--ease);
 }
-.mark:hover { border-color: var(--pine); color: var(--pine); }
+.mark:hover { border-color: var(--pine); color: var(--pine-text); }
 
 .site-nav { display: flex; gap: 28px; }
 .site-nav a {
@@ -136,7 +137,7 @@ a { color: var(--pine); }
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--pine);
+  color: var(--pine-text);
   margin: 0 0 14px;
 }
 
@@ -329,7 +330,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--pine);
+  color: var(--pine-text);
   margin: 3px 0 0;
 }
 .case-row dd {
@@ -359,7 +360,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--ink); margin: 0; }
   border-color: var(--pine);
   box-shadow: 0 10px 24px -16px rgba(23, 33, 43, 0.35);
 }
-.card:hover h3 { color: var(--pine); }
+.card:hover h3 { color: var(--pine-text); }
 
 .card-eyebrow {
   font-family: var(--font-mono);
